@@ -1,0 +1,10 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+MSSQL17.MSSQLSERVER/
+vs_SSMS.exe
+
+appsettings.Development.json
