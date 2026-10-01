@@ -2,11 +2,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MiniBanking.API.Data;
 using MiniBanking.API.Models;
-
+using Microsoft.AspNetCore.Authorization;
 namespace MiniBanking.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+
+[Authorize(Roles = "Admin")]
 public class CustomerController : ControllerBase
 {
     private readonly BankingDbContext _context;

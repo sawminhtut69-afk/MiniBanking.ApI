@@ -14,4 +14,6 @@ public class BankingDbContext : DbContext
     public DbSet<BankAccount> BankAccounts { get; set; }
 
     public DbSet<Transaction> Transactions { get; set; }
+
+    public DbSet<User> Users { get; set; }
 }
